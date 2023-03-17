@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+       
+      /*  let fund = prompt("Enter the your fundamental results");
+        let web = prompt("Enter the your Advanced web design results");
+        let git = prompt ("Enter your git results");
+
+
+/*parseFloat- Is  used to convert the user input from strings to numbers, which is necessary for performing mathematical operations.*/
+   /* fund = parseFloat(fund);
+    web = parseFloat(web);
+    git = parseFloat(git);
+
+let average = (fund + web + git) / 3;
+
+alert("The average of  " + fund + " and " + web + " and " + git +" is " + average);
+
+if (average >= 70 && average <=100){
+        alert ("A")
+        alert ("Well done");
+    }
+    else if (average >=60 && average <=69){
+        alert("B");
+    }
+    else if (average >=50 && average <= 59 ){
+        alert ("C");
+    }
+    else if (average >= 40 && average <= 49){
+        alert ("D");
+    }
+    else if (average <=39){
+    alert ("E");}
+
+    else {
+        alert ("Enter proper marks");
+    }
+*/
+
+
+    let amounts =parseInt( prompt ("Please enter your purchase amount"));
+
+   /* alert ("Discount" + Discount + "\n" + "Amount to pay"); */
+
+
+    if (amounts >= 10000){
+        let discount = (15/100 * amounts);
+
+        alert ("discount: " + discount + "\n" + "Amount to pay: " + (amounts - discount) );
+    }
+
+    else if (amounts >= 5000 && amounts<= 9999){
+        let discount = (10/100 * amounts);
+        alert ("discount: " + discount + "\n" + "Amount to pay: " + (amounts - discount) );
+    }
+    else if (amounts >= 3000 && amounts <= 4999){
+        let discount = (5/100 * amounts);
+        alert ("discount: " + discount + "\n" + "Amount to pay: " + (amounts - discount) );
+    }
+    else if (amounts >=2999 ){
+        alert ("discount: " + discount + "\n" + "Amount to pay: " + (amounts - discount) );
+    }
+
+
+    
+
+
+
+    </script>
+</body>
+</html>
