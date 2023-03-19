@@ -8,7 +8,27 @@
 </head>
 <body>
     <script>
+        const num1 = parseInt(prompt("Please enter 1st number: "));
+        const  num2 =parseInt(prompt("Enter 2nd number: "));
+        const num3 = parseInt(prompt("Enter 3rd number: "));
+
         
+        if (num1 > num2 && num3){
+            alert ("num1" + "\n" + "Is the largest number" ) ;
+        }
+        else if (num2 > num1 && num3){
+            alert ("num2"  + "\n" + "Is the largest number");
+        }
+        else if (num3 > num1 && num2){
+            alert ("num3"  + "\n" + "Is the largest number");
+
+        }
+        else {
+            alert ("Enter digits");
+        }
+        
+
+
     </script>
 </body>
 </html>
