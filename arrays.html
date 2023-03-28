@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        myArray = [12,34,5,4,6,67,45,78,56];
+        console.log(myArray.length);
+        myArray.push (45);
+        console.log(myArray.length);
+        console.log (myArray);
+    </script>
+    <script>
+        myArray1 = [50,56,67,89,30,45,68,60];
+        for (let a= 0; a = myArray1.length; a++){
+            console.log (myArray1[a]);
+        }
+        myArray1.forEach (element => {
+            console.log(element);
+        });
+    </script>
+    <script>
+        myArray2= [50,56,67,89,30,45,68,60];
+        for (let b=0; b = myArray2.length; b++){
+            if (b%5==0){
+                console.log (b);
+            }
+        }
+    </script>
+</body>
+</html>
