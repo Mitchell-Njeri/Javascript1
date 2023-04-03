@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Working with Timing Events</h2>
+    <div id="Timer"></div>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+
+    <script type="text/javascript">
+        let intervalid;
+        var myIntervalid;
+        
+        //setInterval(getCurrentDateTime,1000);
+        //setInterval runs timer according to comps time
+
+
+        function startTimer(){
+        intervalid = setInterval(getCurrentDateTime, 1000);
+         }
+         //starts the timer as per function
+
+
+       function stopTimer(){
+        clearInterval(intervalid);
+      }
+       //stops any function running that is the startTimer function
+
+
+        function getCurrentDateTime(){
+            document.getElementById("Timer").innerHTML = new Date();
+        }
+        getCurrentDateTime();
+    </script>
+</body>
+</html>
