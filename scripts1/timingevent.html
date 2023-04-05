@@ -11,7 +11,12 @@
     <div id="Timer"></div>
     <button onclick="startTimer()">Start Timer</button>
     <button onclick="stopTimer()">Stop Timer</button>
+<br> <br> <br>
 
+    <input type=" text" id = "timers"><br><br>
+    <button onclick="startTimer('timers')">Start Timer</button>
+    <button onclick="stopTimer()">Stop timer</button>
+    
     <script type="text/javascript">
         let intervalid;
         var myIntervalid;
@@ -36,6 +41,29 @@
             document.getElementById("Timer").innerHTML = new Date();
         }
         getCurrentDateTime();
+        function startTimer(controlId){
+            var control =document.getElementById(controlId) ;
+            var seconds = control.value; 
+
+            seconds = seconds - 1 ;
+             
+            if (seconds == 0){
+            control.value = "Done";
+            return;
+        }
+            else {
+            control.value = "seconds";}
+            myIntervalid=setTimeout(function(){startTimer("timers")},1000);
+        }
+            function stopTimer(){
+                clearTimeout(myIntervalid)
+            }
+           
+        
+
+
+
+
     </script>
 </body>
 </html>
