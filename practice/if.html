@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Question-->
+    <label for="Age"></label>
+    <input  type="number" placeholder="Enter your age">
+    <button onclick="myFunction()">Submit</button>
+    <script>
+        function myFunction() {
+            let age ; 
+            if (age < 16 ){
+                console.log ("Sorry you can't enroll for driving classes");
+            }
+            else if(age >= 16){
+                console.log("You are eligible to enroll");
+            }
+        }
+        myFunction();
+    </script>
+</body>
+</html>
